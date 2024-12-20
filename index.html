@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reach & Rise ICT Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Reach & Rise ICT</div>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle">
+                    🌞
+                </button>
+                <div class="cart-icon">
+                    <span id="cart-count">0</span>
+                    <img src="https://api.iconify.design/lucide:shopping-cart.svg" alt="cart">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to Reach & Rise ICT Solutions</h1>
+        <p>Your trusted partner for premium electronic gadgets in Nairobi</p>
+        <div class="business-info">
+            <p>📍 Located in Nairobi</p>
+            <p>🕒 Open Monday - Saturday: 9:00 AM - 6:00 PM</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="filter-section">
+            <h3>Filter by Price</h3>
+            <input type="range" id="price-filter" min="0" max="145000" value="145000">
+            <p>Max Price: KES <span id="price-value">145000</span></p>
+        </div>
+
+        <div id="products-grid" class="products-grid">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </main>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items" class="cart-items">
+                <!-- Cart items will be dynamically inserted here -->
+            </div>
+            <div class="cart-total">
+                <p>Total: KES <span id="cart-total">0</span></p>
+            </div>
+            <button id="close-cart">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📧 Email: info@reachandrise.co.ke</p>
+                <p>📞 Phone: +254 712 345 678</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>📍 Jamia Mall, Shop No G7</p>
+                <p>Nairobi, Kenya</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://instagram.com/reachandrise" target="_blank">Instagram</a>
+                    <a href="https://twitter.com/reachandrise" target="_blank">Twitter</a>
+                    <a href="https://facebook.com/reachandrise" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Reach & Rise ICT Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
